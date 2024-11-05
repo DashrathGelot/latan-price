@@ -12,7 +12,7 @@ const Navbar = ({toggleMenu, isSidebarOpen}) => {
   }
 
   return (
-    <nav className="bg-white p-4 h-20 flex justify-between items-center shadow-sm fixed w-full top-0 z-50 border-b-2 max-w-screen-md rounded">
+    <nav className="bg-white p-4 h-20 flex justify-between items-center shadow-sm fixed w-full top-0 z-50 border-b-2 max-w-[1130px] rounded">
       <div className="flex items-center w-2/5 justify-start">
         <Link onClick={onHome} href="/" className="flex items-center justify-center">
             <Image src={`${prefix}/sore.png`} alt="Logo" width={130} height={35} priority/>

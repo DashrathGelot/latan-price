@@ -31,7 +31,7 @@ export default function RootLayout({ children }) {
         <header>
           <Navbar isSidebarOpen={menuOpen} toggleMenu={toggleMenu}/>
         </header>
-        <main className="overflow-x-hidden top-24 relative">
+        <main className="top-24 relative">
           <Suspense fallback={null}>
             {children}
           </Suspense>
