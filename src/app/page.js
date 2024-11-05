@@ -14,22 +14,22 @@ export default function Home() {
                     alt="Home page"
                     fill
                 />
-                <div className="w-full absolute top-20 left-0 text-center mt-10">
+                <div className="w-full absolute top-20 left-0 text-center mt-20">
                     <h2 className="text-4xl font-bold text-amber-300 text-center">
-                    Your Perfect Tan, Just a Shade Away!!!
+                        Your Perfect Tan, Just a Shade Away!!!
                     </h2>
                 </div>
             </div>
-            <div className="w-full basis-2/5 grid grid-flow-row gap-4">
-                <div className="rounded-md h-32 border w-full relative bg-gradient-to-r from-violet-200 to-pink-200 animate-fade-left animate-duration-1000 animate-ease-in-out">
+            <div className="w-full basis-2/5 grid grid-flow-row">
+                <div className="rounded-md h-36 border w-full relative bg-gradient-to-r from-violet-200 to-pink-200 animate-fade-left animate-duration-1000 animate-ease-in-out">
                     <Image 
-                    src={`${prefix}/sore.png`} 
-                    alt="Logo" 
-                    fill
+                        src={`${prefix}/sore.png`} 
+                        alt="Logo" 
+                        fill
                     />
                 </div>
-                <div className="h-full rounded-md bg-gradient-to-br from-amber-300 via-amber-500 to-amber-800 animate-fade-left animate-duration-1000 animate-ease-in-out">
-                    <p className="animate-pulse text-2xl font-semibold p-6 text-center">Glow Beyond the Sun – Radiant Tans, Anytime, Anywhere!</p>
+                <div className="h-full rounded-md bg-gradient-to-br from-amber-300 via-amber-500 to-amber-600 animate-fade-left animate-duration-1000 animate-ease-in-out justify-center">
+                    <p className="animate-pulse text-3xl font-semibold p-6 text-center">Glow Beyond the Sun, Radiant Tans, Anytime, Anywhere!</p>
                 </div>
             </div>  
         </div>
@@ -37,8 +37,8 @@ export default function Home() {
             <h2 className="text-3xl font-semibold text-red-700">a world of services, tailored for You!</h2>
             <div className="flex mt-4 justify-between">
                 <Service name={"Sun tan"} img={`${prefix}/sun_tan.png`}/>
-                <Service name={"Spray Tan"} img={`${prefix}/spray_tan.png`} isUp={true}/>
-                <Service name={"WellFit"} img={`${prefix}/booth.png`}/>
+                <Service name={"Spray tan"} img={`${prefix}/spray_tan.png`} isUp={true}/>
+                <Service name={"Wellfit"} img={`${prefix}/booth.png`}/>
                 <Service name={"Cryo"} img={`${prefix}/cryo.png`} isUp={true}/>
             </div>
             {/* <div className="flex mt-4 justify-between">
