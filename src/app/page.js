@@ -1,5 +1,6 @@
 import Image from "next/image";
 import RightArrow from "./components/common/RightArrow";
+import { prefix } from "./prefix";
 
 export default function Home() {
   return (
@@ -8,7 +9,7 @@ export default function Home() {
         <div className="basis-[57%] relative text-center animate-jump-in animate-once animate-ease-in-out animate-duration-1000">
           <Image 
             className="rounded-md grayscale" 
-            src={"/sun_tan_girl.jpg"} 
+            src={`${prefix}/sun_tan_girl.jpg`} 
             alt="Home page"
             fill
           />
@@ -21,7 +22,7 @@ export default function Home() {
         <div className="w-full basis-2/5 grid grid-flow-row gap-4">
           <div className="rounded-md h-32 border w-full relative bg-gradient-to-r from-violet-200 to-pink-200 animate-fade-left animate-duration-1000 animate-ease-in-out">
             <Image 
-              src={"/sore.png"} 
+              src={`${prefix}/sore.png`} 
               alt="Logo" 
               fill
             />
