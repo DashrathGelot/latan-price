@@ -39,7 +39,7 @@ export default function Home() {
             <div className="w-full">
               <Image
                 className="p-6"
-                src={"/sun_tan.png"}
+                src={`${prefix}/sun_tan.png`}
                 alt="service image"
                 fill
               />
@@ -56,7 +56,7 @@ export default function Home() {
           <div className="w-[48%] h-96 rounded-md mt-3 border relative animate-fade-left">
             <Image
               className=""
-              src={"/spray_tan.png"}
+              src={`${prefix}/spray_tan.png`}
               alt="service image"
               fill
             />
@@ -75,7 +75,7 @@ export default function Home() {
             <div className="w-full">
               <Image
                 className="p-6"
-                src={"/wellfit.png"}
+                src={`${prefix}/wellfit.png`}
                 alt="service image"
                 fill
               />
@@ -92,7 +92,7 @@ export default function Home() {
           <div className="w-[48%] h-96 rounded-md mt-3 border relative animate-flip-up">
             <Image
               className=""
-              src={"/advanced_red_light.png"}
+              src={`${prefix}/advanced_red_light.png`}
               alt="service image"
               fill
             />
@@ -111,7 +111,7 @@ export default function Home() {
             <div className="w-full">
               <Image
                 className="p-6"
-                src={"/cryo.png"}
+                src={`${prefix}/cryo.png`}
                 alt="service image"
                 fill
               />
@@ -128,7 +128,7 @@ export default function Home() {
           <div className="w-[48%] h-96 rounded-md mt-3 border relative animate-fade-down">
             <Image
               className=""
-              src={"/booth.png"}
+              src={`${prefix}/booth.png`}
               alt="service image"
               fill
             />
