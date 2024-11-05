@@ -9,13 +9,13 @@ export default function Home() {
         <div className="w-full flex flex-row h-80 justify-between">
             <div className="basis-[57%] relative text-center animate-jump-in animate-once animate-ease-in-out animate-duration-1000">
                 <Image 
-                    className="rounded-md grayscale" 
+                    className="rounded-md" 
                     src={`${prefix}/sun_tan_girl.jpg`} 
                     alt="Home page"
                     fill
                 />
-                <div className="w-full absolute top-20 left-0 text-center mt-20">
-                    <h2 className="text-4xl font-bold text-amber-300 text-center">
+                <div className="absolute top-6 left-4 text-center w-1/2">
+                    <h2 className="text-4xl font-bold text-amber-600 text-center">
                         Your Perfect Tan, Just a Shade Away!!!
                     </h2>
                 </div>
