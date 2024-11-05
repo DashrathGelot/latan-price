@@ -47,7 +47,7 @@ export default function Home() {
               <h2 className="text-2xl font-bold text-white text-center">
                 Sun tan
               </h2>
-              <div className="">
+              <div className="arrow">
                 <RightArrow/>
               </div>
             </div>
