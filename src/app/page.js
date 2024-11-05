@@ -20,7 +20,7 @@ export default function Home() {
                     </h2>
                 </div>
             </div>
-            <div className="w-full basis-2/5 grid grid-flow-row">
+            <div className="w-full basis-2/5 grid grid-flow-row gap-5">
                 <div className="rounded-md h-36 border w-full relative bg-gradient-to-r from-violet-200 to-pink-200 animate-fade-left animate-duration-1000 animate-ease-in-out">
                     <Image 
                         src={`${prefix}/sore.png`} 
