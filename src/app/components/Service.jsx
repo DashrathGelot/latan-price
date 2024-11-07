@@ -1,21 +1,41 @@
 import Image from "next/image";
 import RightArrow from "./common/RightArrow";
+import Link from "next/link";
+import { motion } from "framer-motion";
 
-export default function Service({name, img, isUp}) {
+const item = {
+    hidden: { y: 20, opacity: 0 },
+    visible: {
+        y: 0,
+        opacity: 1
+    }
+};
+
+export default function Service({name, img, className, width, path}) {
   return (
-    <div className={`w-[24%] h-72 rounded-md mt-3 border relative ${isUp ? "animate-flip-up" : "animate-flip-down"}`}>
-        <div className="w-full">
+    <motion.div 
+        variants={item}
+        className={
+            `rounded-2xl mt-3 border bg-slate-100
+            ${width ? width : "w-[21%]"}
+            ${className && className}`
+        }
+        whileHover={{ scale: 1.2 }}
+        whileTap={{ scale: 0.9 }}
+        transition={{ type: "spring", stiffness: 400, damping: 17 }}
+    >
+        <div className="w-full h-48 relative">
             <Image
-                className="p-6"
+                className="p-4 pb-0"
                 src={img}
                 alt="service image"
                 fill
             />
         </div>
-        <div className="w-full flex items-center absolute top-44 rounded left-0 text-center mt-10 justify-between p-6 bg-slate-400">
-            <h2 className="text-2xl font-bold text-white text-center">{name}</h2>
+        <Link href={path ? path : ""} className="w-full flex items-center rounded-b-2xl left-0 text-center justify-between p-4 bg-gradient-to-l from-slate-400 via-slate-500 to-zinc-600">
+            <h2 className="text-xl font-bold text-white text-center">{name}</h2>
             <div className="arrow"><RightArrow/></div>
-        </div>
-    </div>
+        </Link>
+    </motion.div>
   );
 }

@@ -31,12 +31,11 @@ export default function RootLayout({ children }) {
         <header>
           <Navbar isSidebarOpen={menuOpen} toggleMenu={toggleMenu}/>
         </header>
-        <main className="top-24 relative">
+        <main>
           <Suspense fallback={null}>
             {children}
           </Suspense>
         </main>
-        <Footer/>
       </body>
     </html>
   );
