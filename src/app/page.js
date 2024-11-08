@@ -18,7 +18,7 @@ const container = {
 export default function Home() {
     const text = "World of services, tailored for you!".split(" ");
     return (
-        <div className="mt-6 flex flex-col justify-between">
+        <div className="mt-6 flex flex-col">
             <div className="text-3xl font-semibold text-amber-800 text-center">
                 { text.map((el, i) => (
                     <motion.span
