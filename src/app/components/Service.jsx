@@ -17,14 +17,14 @@ export default function Service({name, img, className, width, path}) {
         variants={item}
         className={
             `rounded-2xl mt-3 border bg-slate-100
-            ${width ? width : "w-[21%]"}
+            ${width ? width : "w-[19%]"}
             ${className && className}`
         }
         whileHover={{ scale: 1.2 }}
         whileTap={{ scale: 0.9 }}
         transition={{ type: "spring", stiffness: 400, damping: 17 }}
     >
-        <div className="w-full h-48 relative">
+        <div className="w-full h-44 relative">
             <Image
                 className="p-4 pb-0"
                 src={img}

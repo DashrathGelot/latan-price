@@ -18,8 +18,8 @@ const container = {
 export default function Home() {
     const text = "World of services, tailored for you!".split(" ");
     return (
-        <div className="mt-6 flex flex-col">
-            <div className="text-3xl font-semibold text-red-700 text-center">
+        <div className="mt-6 flex flex-col justify-between">
+            <div className="text-3xl font-semibold text-amber-800 text-center">
                 { text.map((el, i) => (
                     <motion.span
                         initial={{ opacity: 0 }}
@@ -30,7 +30,7 @@ export default function Home() {
                     ))
                 }
             </div>
-            <motion.div variants={container} initial="hidden" animate="visible">
+            <motion.div variants={container} initial="hidden" animate="visible" className="mt-4">
                 <div className="flex mt-4 justify-between" >
                     <Service path={"/suntan"} name={"Sun tan"} img={`${prefix}/sun_tan.png`}/>
                     <Service path={"/spraytan"} name={"Spray tan"} img={`${prefix}/spray_tan.png`}/>
@@ -43,7 +43,7 @@ export default function Home() {
                     <Service name={"Emerald laser"} img={`${prefix}/emerald_laser.png`}/>
                 </div>
             </motion.div>
-            <div className="mt-14 flex justify-between">
+            <div className="mt-20 flex justify-between">
                 <motion.button whileTap={{ scale: 0.85 }} type="button" className="text-white bg-black focus:ring-4 focus:outline-none focus:ring-red-100 dark:focus:ring-amber-900 font-semibold rounded-lg text-lg px-5 py-2.5 text-center me-2 mb-2">
                     New Client
                 </motion.button>
