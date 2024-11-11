@@ -20,13 +20,49 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.main {
-  margin-left: 2.25rem;
-  margin-right: 2.25rem;
-  background-image: url('https://dashrathgelot.github.io/latan-price/bg.png'); 
+.background-filter::after {
+  -webkit-backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px);
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%; 
+  height: 100%;
+  top: 0;
+}
+
+.background-filter {
+  position: relative;
+}
+
+.background {
+  background-image: url('https://dashrathgelot.github.io/latan-price/bg9.jpg'); 
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat; 
+}
+
+.main {
+  margin-left: 2.25rem;
+  margin-right: 2.25rem;
   height: 100vh; 
   font-family: sans-serif;
+  position: relative;
+  z-index: 1;
+}
+
+.title {
+  font-family: var(--font-tangerine);
+  font-weight: bold;
+}
+
+.para {
+  font-family: var(--font-source-serif-4);
+  font-style: italic;
+  font-weight: 500;
+}
+
+.satisfy {
+  font-family: var(--font-satisfy);
+  font-weight: 400;
 }
