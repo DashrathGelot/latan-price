@@ -4,7 +4,7 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 
 const item = {
-    hidden: { y: 20, opacity: 0 },
+    hidden: { y: 100, opacity: 0 },
     visible: {
         y: 0,
         opacity: 1
@@ -20,7 +20,7 @@ export default function Service({name, img, className, width, path, desc}) {
             ${width ? width : "w-[22%]"}
             ${className && className}`
         }
-        whileHover={{ scale: 1.2 }}
+        // whileHover={{ scale: 1.2 }}
         whileTap={{ scale: 0.9 }}
         transition={{ type: "spring", stiffness: 400, damping: 17 }}
     >
