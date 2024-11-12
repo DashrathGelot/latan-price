@@ -122,6 +122,5 @@ body {
 }
 
 .curved-edge {
-  /* mask: radial-gradient(25% 25% at top, transparent 100%,black); */
-  background: radial-gradient(50px 50px at 50% -30px, rgba(255, 255, 255, 1) 49.5px, rgba(255, 255, 255, 0.8) 50.5px);
+  background: radial-gradient(ellipse 70% 50% at 50% -20px, rgba(255, 255, 255, 0) 49.5px, rgba(223, 211, 196, 0.8) 50.5px);
 }

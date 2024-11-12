@@ -59,7 +59,7 @@ export default function Home() {
                         desc={"Get a flawless, natural-looking tan with our spray tanning safe, quick, and long-lasting results."}
                     />
                     <Service path={"/infrared"} name={"Infrared Sauna"} img={`${prefix}/Infra-Red-Sauna.jpg`}
-                        desc={"Get a sun-kissed glow with our tanning service for a radiant, confident look year-round."}
+                        desc={"Infrared saunas heat the body directly, creating intense sweating at lower temperatures."}
                     />
                     <Service path={"/wellfit"} name={"Wellfit"} img={`${prefix}/wellfit-2.jpg`}
                         desc={"Get a sun-kissed glow with our tanning service for a radiant, confident look year-round."}
